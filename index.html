@@ -3,46 +3,35 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Cool Site</title>
+<title>電気料金見直しサービス</title>
 
 <style>
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-    color: white;
+    color: #333;
 }
 
 header {
+    background: linear-gradient(135deg, #0072ff, #00c6ff);
+    color: white;
     text-align: center;
-    padding: 100px 20px;
+    padding: 80px 20px;
 }
 
 h1 {
-    font-size: 50px;
-    margin-bottom: 10px;
-}
-
-p {
-    font-size: 18px;
-    opacity: 0.8;
+    font-size: 36px;
 }
 
 .btn {
     margin-top: 20px;
-    padding: 12px 30px;
+    padding: 15px 40px;
+    background: #ffcc00;
     border: none;
-    background: #00c6ff;
-    color: black;
+    font-size: 18px;
     font-weight: bold;
     cursor: pointer;
     border-radius: 30px;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    background: #0072ff;
-    color: white;
 }
 
 .section {
@@ -50,20 +39,30 @@ p {
     text-align: center;
 }
 
+.box {
+    max-width: 800px;
+    margin: auto;
+}
+
 .card {
     display: inline-block;
-    background: rgba(255,255,255,0.1);
-    padding: 20px;
-    margin: 10px;
-    border-radius: 15px;
     width: 250px;
-    backdrop-filter: blur(10px);
+    margin: 10px;
+    padding: 20px;
+    background: #f5f5f5;
+    border-radius: 10px;
+}
+
+.highlight {
+    color: red;
+    font-weight: bold;
 }
 
 footer {
-    text-align: center;
+    background: #222;
+    color: white;
     padding: 20px;
-    opacity: 0.6;
+    text-align: center;
 }
 </style>
 </head>
@@ -71,33 +70,59 @@ footer {
 <body>
 
 <header>
-    <h1>My Website 🚀</h1>
-    <p>ここが俺の最強ホームページ</p>
-    <button class="btn" onclick="alert('ようこそ😎')">ENTER</button>
+    <h1>電気代、まだ高いままですか？</h1>
+    <p>今すぐ見直しで月々コスト削減</p>
+    <button class="btn" onclick="scrollToForm()">無料相談はこちら</button>
 </header>
 
 <div class="section">
-    <h2>サービス</h2>
-
-    <div class="card">
-        <h3>サービス①</h3>
-        <p>ここに説明を書く</p>
-    </div>
-
-    <div class="card">
-        <h3>サービス②</h3>
-        <p>ここに説明を書く</p>
-    </div>
-
-    <div class="card">
-        <h3>サービス③</h3>
-        <p>ここに説明を書く</p>
+    <div class="box">
+        <h2>こんなお悩みありませんか？</h2>
+        <p>✔ 電気代が高い<br>✔ 見直したいけど面倒<br>✔ よく分からない</p>
     </div>
 </div>
 
+<div class="section">
+    <h2>選ばれる理由</h2>
+
+    <div class="card">
+        <h3>簡単</h3>
+        <p>最短5分で完了</p>
+    </div>
+
+    <div class="card">
+        <h3>安心</h3>
+        <p>専門スタッフ対応</p>
+    </div>
+
+    <div class="card">
+        <h3>お得</h3>
+        <p><span class="highlight">最大30%削減</span></p>
+    </div>
+</div>
+
+<div class="section">
+    <h2>お客様の声</h2>
+    <p>「毎月1万円安くなりました！」</p>
+    <p>「もっと早くやればよかった」</p>
+</div>
+
+<div class="section" id="form">
+    <h2>無料相談フォーム</h2>
+    <input type="text" placeholder="お名前"><br><br>
+    <input type="text" placeholder="電話番号"><br><br>
+    <button class="btn">送信する</button>
+</div>
+
 <footer>
-    <p>© 2026 My Site</p>
+    <p>© 2026 電気サービス</p>
 </footer>
+
+<script>
+function scrollToForm() {
+    document.getElementById("form").scrollIntoView({ behavior: "smooth" });
+}
+</script>
 
 </body>
 </html>
