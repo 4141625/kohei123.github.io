@@ -1,37 +1,103 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <title>俺のホームページ</title>
-    <style>
-        body {
-            background-color: #111;
-            color: white;
-            text-align: center;
-            font-family: Arial, sans-serif;
-        }
-        h1 {
-            color: #00ffcc;
-        }
-        button {
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Cool Site</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+}
+
+header {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 12px 30px;
+    border: none;
+    background: #00c6ff;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #0072ff;
+    color: white;
+}
+
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.card {
+    display: inline-block;
+    background: rgba(255,255,255,0.1);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 15px;
+    width: 250px;
+    backdrop-filter: blur(10px);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    opacity: 0.6;
+}
+</style>
 </head>
+
 <body>
 
-    <h1>ようこそ！</h1>
-    <p>これは俺のホームページです。</p>
+<header>
+    <h1>My Website 🚀</h1>
+    <p>ここが俺の最強ホームページ</p>
+    <button class="btn" onclick="alert('ようこそ😎')">ENTER</button>
+</header>
 
-    <button onclick="hello()">クリックしてみろ</button>
+<div class="section">
+    <h2>サービス</h2>
 
-    <script>
-        function hello() {
-            alert("押したな？😎");
-        }
-    </script>
+    <div class="card">
+        <h3>サービス①</h3>
+        <p>ここに説明を書く</p>
+    </div>
+
+    <div class="card">
+        <h3>サービス②</h3>
+        <p>ここに説明を書く</p>
+    </div>
+
+    <div class="card">
+        <h3>サービス③</h3>
+        <p>ここに説明を書く</p>
+    </div>
+</div>
+
+<footer>
+    <p>© 2026 My Site</p>
+</footer>
 
 </body>
 </html>
