@@ -88,7 +88,24 @@ footer {
 <header>
   <h1>電気料金を今すぐ見直し</h1>
   <p>毎月の電気代を最大30%削減</p>
-  <button>無料診断はこちら</button>
+  <button onclick="showOptions()">無料診断はこちら</button>
+
+<script>
+function showOptions() {
+  const choice = confirm("電力会社を選択してください\nOK：エネパル電気\nキャンセル：他の選択肢を表示");
+
+  if (choice) {
+    window.location.href = "https://www.enepal.jp/";
+  } else {
+    const second = confirm("OK：東名電気\nキャンセル：つばさでんき");
+    if (second) {
+      window.location.href = "https://www.toumei.co.jp/";
+    } else {
+      window.location.href = "https://tsubasa-denki.jp/";
+    }
+  }
+}
+</script>
 </header>
 
 <section>
